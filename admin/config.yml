@@ -2,6 +2,8 @@ backend:
   name: git-gateway
   branch: main
 
+site_url: "https://valentinolorenti.netlify.app"
+
 media_folder: "assets/images"
 public_folder: "/assets/images"
 
