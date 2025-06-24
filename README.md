@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Mi Portfolio
 
 Este proyecto es un portfolio personal que incluye un panel administrativo para gestionar proyectos de manera dinámica. Utiliza Netlify CMS para facilitar la adición y edición de proyectos sin necesidad de modificar el código directamente.
@@ -55,3 +56,7 @@ Las contribuciones son bienvenidas. Si deseas mejorar este proyecto, por favor a
 ## Licencia
 
 Este proyecto está bajo la Licencia MIT.
+=======
+# LV_Design
+Web Site
+>>>>>>> 2a8ef65a8c57e7c4b878c2e520376ead2240a4c1
