@@ -1,0 +1,24 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/images"
+public_folder: "/assets/images"
+
+collections:
+  - name: "projects"
+    label: "Proyectos"
+    label_singular: "Proyecto"
+    files:
+      - file: "data/projects.json"
+        label: "Lista de Proyectos"
+        name: "projects"
+        fields:
+          - label: "Proyectos"
+            name: "projects"
+            widget: "list"
+            fields:
+              - {label: "Título", name: "title", widget: "string"}
+              - {label: "Descripción", name: "description", widget: "text"}
+              - {label: "Imagen", name: "image", widget: "image"}
+              - {label: "URL", name: "url", widget: "string", required: false}

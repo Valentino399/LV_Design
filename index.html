@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LV Design</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Tu CSS principal -->
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <!-- Cursor -->
+    <div class="cursor"></div>
+    
+    <!-- Social Sidebar -->
+    <div class="social-sidebar d-none d-md-block">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-behance"></i></a>
+        <a href="#"><i class="fab fa-dribbble"></i></a>
+    </div>
+    
+    <!-- Header -->
+    <header class="container-fluid py-4">
+        <div class="row align-items-center">
+            <div class="col-6">
+                <a href="index.html" class="text-decoration-none">
+                    <div class="logo text-white">
+                        <img src="img/logo.png" width="10%">
+                    </div>
+                </a>
+            </div>
+            <div class="col-6 text-end">
+                <div class="d-flex justify-content-end align-items-center">
+                    <div class="studio-info text-end me-4 d-none d-md-block">
+                        <p class="mb-0">LV | Valentino Lorenti</p>
+                    </div>
+                    <div class="studio-info text-end me-4 d-none d-md-block">
+                        <p class="mb-0">+ Hora Local</p>
+                        <p class="mb-0 current-time">00:00:00 (GMT)</p>
+                    </div>
+                    <button class="menu-btn" id="menuBtn">MENU</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Menu Overlay -->
+    <div class="menu-overlay" id="menuOverlay">
+        <button class="close-menu" id="closeMenu">
+            <i class="fas fa-times"></i>
+        </button>
+        <ul class="menu-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="proyectos.html">Proyectos</a></li>
+            <li><a href="#about">Sobre Mí</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+    </div>
+    
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="hero-bg">
+            <video autoplay muted loop playsinline>
+                <source src="img/ps3-wave.1920x1080.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <h2 class="display-8 fw-bold">Valentino Lorenti</h2>
+                    <h1 class="display-3 fw-bold mb-4">Diseñador UX / UI</h1>
+                    <p class="lead mb-5">
+                        Soy un apasionado a la tecnología en general pero me siento inmensamente identificado con el Diseño Ux/Ui.
+                        Puedo describir mi hobby como la producción musical utilizando la herramienta de FL Studio. Autodidacta, Curioso y con ganas de seguir aprendiendo cada día.
+                        Hoy me encuentro desarrollando diseños de interfaces y experiencia de usuarios exprimiendo Figma, Adobe Illustrator y Photoshop.
+                    </p>
+                    <a href="#about" class="btn btn-custom">Saber Más <i class="fas fa-arrow-right ms-2"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Projects Section -->
+    <section class="py-5" id="projects">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 d-flex justify-content-between align-items-center">
+                    <h2 class="display-4 fw-bold">Proyectos Destacados</h2>
+                </div>
+            </div>
+            <div id="projects-container" class="row g-4">
+                <!-- Los proyectos destacados se cargarán aquí dinámicamente -->
+            </div>
+            <!-- Ver Más Section -->
+            <div class="row mt-5">
+                <div class="col-12 text-center">
+                    <a href="proyectos.html" class="btn btn-custom btn-lg">
+                        Ver Todos los Proyectos <i class="fas fa-arrow-right ms-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <div class="text-center">
+                        <h2 class="display-4 fw-bold mb-4">• Sobre Mí</h2>
+                        <p class="about-text mb-5">
+                            Tengo experiencia en el diseño de interfaces y experiencia de usuario, así como en la creación de prototipos interactivos. Me encanta trabajar con herramientas como Figma, Adobe XD y Photoshop. 
+                        </p>
+                        <a href="#contact" class="btn btn-custom">Contactar <i class="fas fa-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Skills Section -->
+    <section class="skills-section py-5 mt-5 position-relative" id="skills">
+        <div class="skills-bg"></div>
+        <div class="container position-relative">
+            <div class="row mb-5">
+                <div class="col-12">
+                    <h2 class="display-3 fw-bold">• Habilidades</h2>
+                    <p class="lead text-muted">Las herramientas y cualidades que definen mi trabajo</p>
+                </div>
+            </div>
+            <div class="row mb-5">
+                <div class="col-12">
+                    <h3 class="display-6 fw-bold mb-4">Técnicas</h3>
+                </div>
+                <div class="col-md-6">
+                    <div class="skill-item mb-5">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="fs-4"> UX / UI </span>
+                            <span class="fs-5 text-muted">95%</span>
+                        </div>
+                        <div class="progress" style="height: 2px; background-color: rgba(255,255,255,0.1);">
+                            <div class="progress-bar" role="progressbar" style="width: 95%; background-color: #ffffff;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item mb-5">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="fs-4"> Figma </span>
+                            <span class="fs-5 text-muted">95%</span>
+                        </div>
+                        <div class="progress" style="height: 2px; background-color: rgba(255,255,255,0.1);">
+                            <div class="progress-bar" role="progressbar" style="width: 95%; background-color: #ffffff;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item mb-5">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="fs-4"> Adobe Illustrator </span>
+                            <span class="fs-5 text-muted">90%</span>
+                        </div>
+                        <div class="progress" style="height: 2px; background-color: rgba(255,255,255,0.1);">
+                            <div class="progress-bar" role="progressbar" style="width: 90%; background-color: #ffffff;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="skill-item mb-5">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="fs-4"> Adobe XD </span>
+                            <span class="fs-5 text-muted">80%</span>
+                        </div>
+                        <div class="progress" style="height: 2px; background-color: rgba(255,255,255,0.1);">
+                            <div class="progress-bar" role="progressbar" style="width: 80%; background-color: #ffffff;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item mb-5">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="fs-4"> Adobe Photoshop </span>
+                            <span class="fs-5 text-muted">85%</span>
+                        </div>
+                        <div class="progress" style="height: 2px; background-color: rgba(255,255,255,0.1);">
+                            <div class="progress-bar" role="progressbar" style="width: 85%; background-color: #ffffff;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5 pt-5">
+                <div class="col-12">
+                    <h3 class="display-6 fw-bold mb-5">Blandas</h3>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="soft-skill-item">
+                        <h4 class="fs-2 fw-light mb-3">01</h4>
+                        <h5 class="fs-4 mb-2">Trabajo en Equipo</h5>
+                        <div class="skill-level">
+                            <span class="skill-dot active"></span>
+                            <span class="skill-dot active"></span>
+                            <span class="skill-dot active"></span>
+                            <span class="skill-dot active"></span>
+                            <span class="skill-dot active"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="soft-skill-item">
+                        <h4 class="fs-2 fw-light mb-3">02</h4>
+                        <h5 class="fs-4 mb-2">Creatividad</h5>
+                        <div class="skill-level">
+                            <span class="skill-dot active"></span>
+                            <span class="skill-dot active"></span>
+                            <span class="skill-dot active"></span>
+                            <span class="skill-dot active"></span>
+                            <span class="skill-dot active"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="soft-skill-item">
+                        <h4 class="fs-2 fw-light mb-3">03</h4>
+                        <h5 class="fs-4 mb-2">Comunicación</h5>
+                        <div class="skill-level">
+                            <span class="skill-dot active"></span>
+                            <span class="skill-dot active"></span>
+                            <span class="skill-dot active"></span>
+                            <span class="skill-dot active"></span>
+                            <span class="skill-dot"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="soft-skill-item">
+                        <h4 class="fs-2 fw-light mb-3">04</h4>
+                        <h5 class="fs-4 mb-2">Organización</h5>
+                        <div class="skill-level">
+                            <span class="skill-dot active"></span>
+                            <span class="skill-dot active"></span>
+                            <span class="skill-dot active"></span>
+                            <span class="skill-dot active"></span>
+                            <span class="skill-dot active"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>  
+    
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="get-in-touch">
+          <h2>Contáctame <span class="arrow-icon">&#8599;</span></h2>
+          <form action="https://formspree.io/f/yourFormID" method="POST" class="contact-form">
+            <input type="text" name="name" placeholder="Tu nombre" required>
+            <input type="email" name="email" placeholder="Tu correo" required>
+            <textarea name="message" placeholder="Tu mensaje" rows="5" required></textarea>
+            <button type="submit" class="btn-custom">Enviar</button>
+          </form>
+        </div>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/valentino-lorenti-ux" class="social-link" target="_blank">LINKEDIN</a>
+          <a href="https://www.instagram.com/lv_designux" class="social-link" target="_blank">INSTAGRAM</a>
+          <a href="https://www.behance.net/LV_DesignUX" class="social-link" target="_blank">BEHANCE</a>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Back to Top -->
+    <div class="back-to-top-container">
+        <a href="#home" class="back-to-top">
+            BACK TO TOP
+        </a>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="footer py-4">
+        <div class="container-fluid px-4">
+            <div class="row">
+                <div class="col-12">
+                    <p class="mb-0">© <span id="currentYear">2025</span> LV | Valentino Lorenti. TODOS LOS DERECHOS RESERVADOS.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/scripts.js"></script>
+</body>
+</html>

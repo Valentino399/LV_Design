@@ -1,0 +1,301 @@
+:root {
+    --dark-bg: #0a0a0a;
+    --text-color: #ffffff;
+    --accent-color: #ffffff;
+    --border-color: rgba(255, 255, 255, 0.1);
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--dark-bg);
+    color: var(--text-color);
+    overflow-x: hidden;
+}
+
+.logo {
+    font-size: 5rem;
+    font-weight: 700;
+    letter-spacing: -2px;
+    line-height: 0.9;
+}
+
+.menu-btn {
+    background: transparent;
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+}
+
+.menu-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.social-sidebar {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+    padding: 1rem;
+}
+
+.social-sidebar a {
+    display: block;
+    color: var(--text-color);
+    margin: 1rem 0;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.social-sidebar a:hover {
+    color: var(--accent-color);
+    transform: translateX(5px);
+}
+
+.hero-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://source.unsplash.com/random/1920x1080/?abstract,dark') no-repeat center center;
+    background-size: cover;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+.project-card {
+    background: rgba(20, 20, 20, 0.7);
+    border: 1px solid var(--border-color);
+    border-radius: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.project-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.project-info {
+    padding: 1.5rem;
+}
+
+.project-number {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.about-section {
+    padding: 5rem 0;
+    position: relative;
+}
+
+.about-text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.btn-custom {
+    background: transparent;
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    padding: 0.75rem 2rem;
+    transition: all 0.3s ease;
+    border-radius: 0;
+}
+
+.btn-custom:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--text-color);
+}
+
+.footer {
+    padding: 2rem 0;
+    border-top: 1px solid var(--border-color);
+}
+
+.cursor {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    mix-blend-mode: difference;
+    transition: transform 0.1s ease;
+}
+
+.studio-info {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--dark-bg);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease;
+}
+
+.menu-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu-links {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-links li {
+    margin: 2rem 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+}
+
+.menu-overlay.active .menu-links li {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.menu-links a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.menu-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--text-color);
+    transition: all 0.3s ease;
+}
+
+.menu-links a:hover::after {
+    width: 100%;
+}
+
+.close-menu {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    background: transparent;
+    border: none;
+    color: var(--text-color);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.project-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.filter-btn {
+    background: transparent;
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    padding: 0.5rem 1.5rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.filter-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.filter-btn.active {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: var(--text-color);
+}
+
+.project-link {
+    color: var(--text-color);
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.project-link:hover {
+    color: var(--accent-color);
+    transform: translateX(5px);
+}
+
+@media (max-width: 768px) {
+    .logo {
+        font-size: 3rem;
+    }
+    
+    .social-sidebar {
+        position: static;
+        transform: none;
+        display: flex;
+        justify-content: center;
+        padding: 1rem 0;
+    }
+    
+    .social-sidebar a {
+        margin: 0 1rem;
+    }
+    
+    .menu-links li {
+        font-size: 1.8rem;
+    }
+    
+    .project-filters {
+        justify-content: center;
+    }
+}
+
+
+/* Estado inicial de los proyectos */
+.project-item {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Estado cuando el proyecto es visible */
+.project-item.visible {
+    opacity: 1;
+    transform: translateY(0);
+}

@@ -1,0 +1,28 @@
+{
+  "projects": [
+    {
+      "title": "Nombre del proyecto",
+      "description": "Descripción...",
+      "image": "assets/images/ejemplo.jpg",
+      "url": "https://enlace.com"
+    },
+    {
+      "title": "Proyecto 1",
+      "description": "Descripción del Proyecto 1",
+      "image": "assets/images/proyecto1.jpg",
+      "url": "https://enlace-a-proyecto1.com"
+    },
+    {
+      "title": "Proyecto 2",
+      "description": "Descripción del Proyecto 2",
+      "image": "assets/images/proyecto2.jpg",
+      "url": "https://enlace-a-proyecto2.com"
+    },
+    {
+      "title": "Proyecto 3",
+      "description": "Descripción del Proyecto 3",
+      "image": "assets/images/proyecto3.jpg",
+      "url": "https://enlace-a-proyecto3.com"
+    }
+  ]
+}

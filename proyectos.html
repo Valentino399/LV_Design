@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos - Tu Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Tus estilos -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/proyectos.css">
+</head>
+<body>
+    <!-- Cursor -->
+    <div class="cursor"></div>
+    
+    <!-- Social Sidebar -->
+    <div class="social-sidebar d-none d-md-block">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-behance"></i></a>
+        <a href="#"><i class="fab fa-dribbble"></i></a>
+    </div>
+    
+    <!-- Header -->
+    <header class="container-fluid py-4">
+        <div class="row align-items-center">
+            <div class="col-6">
+                <a href="index.html" class="text-decoration-none">
+                    <div class="logo text-white"> <img src="img/logo.png" width="10%"> </div>
+                </a>
+            </div>
+            <div class="col-6 text-end">
+                <div class="d-flex justify-content-end align-items-center">
+                    <div class="studio-info text-end me-4 d-none d-md-block">
+                        <p class="mb-0">LV | Valentino Lorenti</p>
+                    </div>
+                    <div class="studio-info text-end me-4 d-none d-md-block">
+                        <p class="mb-0">+ Hora Local</p>
+                        <p class="mb-0 current-time">00:00:00 (GMT)</p>
+                    </div>
+                    <button class="menu-btn" id="menuBtn">MENU</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Menu Overlay -->
+    <div class="menu-overlay" id="menuOverlay">
+        <button class="close-menu" id="closeMenu">
+            <i class="fas fa-times"></i>
+        </button>
+        <ul class="menu-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="proyectos.html">Proyectos</a></li>
+            <li><a href="index.html#about">Sobre Mí</a></li>
+            <li><a href="index.html#contact">Contacto</a></li>
+        </ul>
+    </div>
+    
+    <!-- Projects Header -->
+    <section class="py-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="display-3 fw-bold mb-4">Proyectos</h1>
+                    <p class="lead mb-5">Una selección de nuestros trabajos más recientes y destacados.</p>
+                </div>
+            </div>
+            
+            <!-- Project Filters -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <div class="project-filters">
+                        <button class="filter-btn active" data-filter="all">Todos</button>
+                        <button class="filter-btn" data-filter="uxresearch">Ux Research</button>
+                        <button class="filter-btn" data-filter="web">Diseño Web</button>
+                        <button class="filter-btn" data-filter="uiux">UI/UX</button>
+                        <button class="filter-btn" data-filter="html">Sitios Web</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Projects Grid -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4 projects-grid" id="projects-container">
+                <!-- Los proyectos se cargarán aquí dinámicamente -->
+            </div>
+        </div>
+    </section>
+    
+    <!-- Back to Home -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <a href="index.html" class="btn btn-custom">
+                        <i class="fas fa-arrow-left me-2"></i> Volver al Inicio
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>© <span id="currentYear">2025</span> LV | Valentino Lorenti. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-white text-decoration-none">Volver arriba</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/scripts.js"></script>
+</body>
+</html>
