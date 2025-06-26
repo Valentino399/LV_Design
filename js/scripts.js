@@ -137,11 +137,13 @@ async function loadProjects({limit = null, filter = null} = {}) {
         const data = await response.json();
         let projects = data.projects;
 
-        // Filtrado por categoría si aplica
+        // Filtrado por categoría si aplica (filtro flexible)
         if (filter && filter.toLowerCase() !== 'todos' && filter !== 'all') {
             projects = projects.filter(p => {
                 const cat = (p.category || '').replace(/\s+/g, '').toLowerCase();
                 const fil = filter.replace(/\s+/g, '').toLowerCase();
+                // Debug: muestra qué compara
+                // console.log('Comparando:', cat, fil);
                 return cat === fil;
             });
         }
@@ -205,7 +207,8 @@ window.addEventListener('load', revealProjectsOnScroll);
 // ===================
 document.addEventListener('DOMContentLoaded', () => {
     const isIndex = window.location.pathname.endsWith('index.html') || window.location.pathname === '/';
-    const isProyectos = window.location.pathname.endsWith('proyectos.html');
+    // Soporte para /proyectos en Netlify (sin .html)
+    const isProyectos = window.location.pathname.endsWith('proyectos.html') || window.location.pathname.endsWith('/proyectos');
 
     if (isIndex) {
         loadProjects({limit: PROJECTS_LIMIT_INDEX});
