@@ -299,3 +299,10 @@ body {
     opacity: 1;
     transform: translateY(0);
 }
+
+/* Oculta el cursor custom en pantallas menores a 992px */
+@media (max-width: 991px) {
+  .cursor {
+    display: none !important;
+  }
+}

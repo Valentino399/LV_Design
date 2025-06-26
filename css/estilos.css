@@ -513,3 +513,10 @@ letter-spacing: 1px;
 .contact-form textarea:focus {
   border-color: var(--accent-color);
 }
+
+/* Oculta el cursor custom en pantallas menores a 992px */
+@media (max-width: 991px) {
+  .cursor {
+    display: none !important;
+  }
+}

@@ -29,7 +29,9 @@ updateTime();
 // 3. Custom cursor
 // ===================
 const cursor = document.querySelector('.cursor');
-if (cursor) {
+const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+
+if (cursor && !isTouchDevice) {
     document.addEventListener('mousemove', (e) => {
         cursor.style.left = e.clientX + 'px';
         cursor.style.top = e.clientY + 'px';
