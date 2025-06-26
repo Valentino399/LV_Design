@@ -1,28 +1,67 @@
 {
   "projects": [
     {
-      "title": "Nombre del proyecto",
-      "description": "Descripción...",
-      "image": "assets/images/ejemplo.jpg",
-      "url": "https://enlace.com"
+      "title": "Underc0de",
+      "description": "Rediseño Web HTML",
+      "image": "assets/images/underc0de.jpg",
+      "url": "https://underc0de.org/",
+      "category": "Sitio Web"
     },
     {
-      "title": "Proyecto 1",
-      "description": "Descripción del Proyecto 1",
-      "image": "assets/images/proyecto1.jpg",
-      "url": "https://enlace-a-proyecto1.com"
+      "title": "Diartmond | NFTs Marketplace",
+      "description": "Diseño UX / UI",
+      "image": "assets/images/diartmond.jpg",
+      "url": "https://www.behance.net/gallery/138995057/DIARTMOND-NFTs-Marketplace-UX-UI",
+      "category": "Diseño Web"
     },
     {
-      "title": "Proyecto 2",
-      "description": "Descripción del Proyecto 2",
-      "image": "assets/images/proyecto2.jpg",
-      "url": "https://enlace-a-proyecto2.com"
+      "title": "Gran Turismo",
+      "description": "Rediseño Web UX / UI",
+      "image": "assets/images/granturismo.jpg",
+      "url": "https://www.behance.net/gallery/221929563/Rediseno-web-Gran-Turismo-UX-UI",
+      "category": "Diseño Web"
     },
     {
-      "title": "Proyecto 3",
-      "description": "Descripción del Proyecto 3",
-      "image": "assets/images/proyecto3.jpg",
-      "url": "https://enlace-a-proyecto3.com"
-    }
+      "title": "Dakar",
+      "description": "Rediseño Web UX / UI",
+      "image": "assets/images/dakar.jpg",
+      "url": "https://www.behance.net/gallery/214479035/Rediseno-web-Dakar-UX-UI",
+      "category": "Diseño Web"
+    },
+    {
+      "title": "Instagram",
+      "description": "Ux Research",
+      "image": "assets/images/instagram.jpg",
+      "url": "https://www.behance.net/gallery/138024305/Instagram-UX-UI-Research",
+      "category": "UX Research"
+    },
+    {
+      "title": "Dexter",
+      "description": "Rediseño Web UX / UI",
+      "image": "assets/images/dexter.jpg",
+      "url": "https://www.behance.net/gallery/132163983/Rediseno-Web-Dexter-UX-UI",
+      "category": "Diseño Web"
+    },
+    {
+      "title": "Sakiro",
+      "description": "Diseño UX / UI",
+      "image": "assets/images/sakiro.jpg",
+      "url": "https://www.behance.net/gallery/169477033/Sakiro-Clothing-store-UX-UI",
+      "category": "UI/UX"
+    },
+    {
+      "title": "PlumeGuard",
+      "description": "Diseño UX / UI",
+      "image": "assets/images/plumeguard.jpg",
+      "url": "https://www.behance.net/gallery/180045573/PlumeGuard-UX-UI",
+      "category": "UI/UX"
+    },
+    {
+      "title": "All Music",
+      "description": "Diseño UX / UI",
+      "image": "assets/images/allmusic.jpg",
+      "url": "https://www.behance.net/gallery/127336017/All-Music-(Distribuidora-Musical)-UXUI",
+      "category": "UI/UX"
+    }   
   ]
 }
