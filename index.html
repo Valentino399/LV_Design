@@ -3,293 +3,265 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LV Design</title>
-    <!-- Bootstrap CSS -->
+    <title>LV Design | Valentino Lorenti</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <!-- Font Awesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <!-- Tu CSS principal -->
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-    <!-- Cursor -->
-    <div class="cursor"></div>
-    
-    <!-- Social Sidebar -->
-    <div class="social-sidebar d-none d-md-block">
-        <a href="https://www.instagram.com/lv_designux"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.behance.net/LV_DesignUX"><i class="fab fa-behance"></i></a>
-        <a href="https://www.linkedin.com/in/valentino-lorenti-ux"><i class="fab fa-linkedin"></i></a>
+
+    <div class="grid-overlay"></div>
+    <div class="scan-line"></div>
+
+    <div class="cyber-menu" id="menuOverlay">
+        <button class="close-menu" id="closeBtn">CLOSE // ✕</button>
+        <nav class="menu-content">
+            <a href="#home" class="menu-link" data-text="INICIO">INICIO</a>
+            <a href="#projects" class="menu-link" data-text="PROYECTOS">PROYECTOS</a>
+            <a href="#about" class="menu-link" data-text="SOBRE MÍ">SOBRE MÍ</a>
+            <a href="#contact" class="menu-link" data-text="CONTACTO">CONTACTO</a>
+        </nav>
     </div>
-    
-    <!-- Header -->
-    <header class="container-fluid py-4">
-        <div class="row align-items-center">
-            <div class="col-6">
-                <a href="index.html" class="text-decoration-none">
-                    <div class="logo text-white">
-                        <img src="img/logo.png" width="10%">
+
+    <header>
+        <div class="container-fluid px-4 px-md-5">
+            <div class="row align-items-center">
+                <div class="col-6 col-md-4">
+                    <a href="index.html" class="logo">
+                        <img src="img/logo.png" width="40" alt="LV">
+                    </a>
+                </div>
+                <div class="col-md-4 d-none d-md-flex justify-content-center">
+                    <div class="studio-info">
+                        <p class="mb-0">LV | VALENTINO LORENTI</p>
                     </div>
-                </a>
-            </div>
-            <div class="col-6 text-end">
-                <div class="d-flex justify-content-end align-items-center">
-                    <div class="studio-info text-end me-4 d-none d-md-block">
-                        <p class="mb-0">LV | Valentino Lorenti</p>
+                </div>
+                <div class="col-6 col-md-4 text-end">
+                    <div class="header-data justify-content-end">
+                        <div class="time-box d-none d-lg-block me-4">
+                            <p class="mb-0 text-tech-visible">+ TIEMPO LOCAL</p>
+                            <p class="mb-0 text-white" id="clock">00:00:00 (GMT-3)</p>
+                        </div>
+                        <button class="menu-btn" id="menuBtn">MENU</button>
                     </div>
-                    <div class="studio-info text-end me-4 d-none d-md-block">
-                        <p class="mb-0">+ Hora Local</p>
-                        <p class="mb-0 current-time">00:00:00 (GMT)</p>
-                    </div>
-                    <button class="menu-btn" id="menuBtn">MENU</button>
                 </div>
             </div>
         </div>
     </header>
-    
-    <!-- Menu Overlay -->
-    <div class="menu-overlay" id="menuOverlay">
-        <button class="close-menu" id="closeMenu">
-            <i class="fas fa-times"></i>
-        </button>
-        <ul class="menu-links">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="proyectos.html">Proyectos</a></li>
-            <li><a href="#about">Sobre Mí</a></li>
-            <li><a href="#contact">Contacto</a></li>
-        </ul>
-    </div>
-    
-    <!-- Hero Section -->
+
     <section class="hero-section" id="home">
         <div class="hero-bg">
-            <video autoplay muted loop playsinline>
-                <source src="img/ps3-wave.1920x1080.mp4" type="video/mp4">
-                Tu navegador no soporta el elemento de video.
-            </video>
+            <video autoplay muted loop playsinline><source src="img/ps3-wave.1920x1080.mp4" type="video/mp4"></video>
         </div>
-        <div class="container">
+        <div class="container px-4 px-md-5">
             <div class="row">
-                <div class="col-md-8 offset-md-2">
-                    <h2 class="display-8 fw-bold">Valentino Lorenti</h2>
-                    <h1 class="display-3 fw-bold mb-4">Diseñador UX / UI</h1>
-                    <p class="lead mb-5">
-                        Soy un apasionado a la tecnología en general pero me siento mayormente identificado con el Diseño Ux/Ui.
-                        Puedo describir mi hobby como la producción musical utilizando la herramienta de FL Studio. Autodidacta, curioso y con ganas de seguir aprendiendo cada día.
-                        Hoy me encuentro desarrollando diseños de interfaces y experiencia de usuarios utilizando Figma, Adobe Illustrator y Photoshop.
+                <div class="col-lg-10 offset-lg-1">
+                    <p class="text-tech-visible mb-4">// HOLA MUNDO</p>
+                    <h1 class="display-mega">VALENTINO LORENTI<br>DISEÑADOR UX/UI</h1>
+                    <p class="lead text-muted-ux">
+                        Freelancer de 24 años especializado en crear interfaces digitales que equilibran estética y usabilidad.
                     </p>
-                    <a href="#about" class="btn btn-custom">Saber Más <i class="fas fa-arrow-right ms-2"></i></a>
+                    <div class="mt-5">
+                        <a href="#projects" class="btn-custom-cyber">Ver Proyectos <i class="fas fa-arrow-right ms-2"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    
-    <!-- Projects Section -->
-    <section class="py-5" id="projects">
-        <div class="container">
-            <div class="row mb-5">
-                <div class="col-12 d-flex justify-content-between align-items-center">
-                    <h2 class="display-4 fw-bold">Proyectos Destacados</h2>
+
+    <section id="projects" class="py-150">
+        <div class="container px-4 px-md-5">
+            <p class="text-tech-visible mb-2">// PORTFOLIO</p>
+            <h2 class="display-4 fw-bold text-white mb-5">PROYECTOS DESTACADOS</h2>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="project-card-cyber">
+                        <div class="p-img"><img src="/assets/images/FUTVO.jpg" alt="AllMusic"></div>
+                        <div class="p-info">
+                            <span class="text-tech-visible">/ 001 - UX/UI DESIGN + FRONTEND </span>
+                            <h3>Futvo</h3>
+                            <a href="https://futvo.com/" class="p-link">Ver Detalles ↗</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="project-card-cyber">
+                        <div class="p-img"><img src="/assets/images/underc0de.jpg" alt="Dakar"></div>
+                        <div class="p-info">
+                            <span class="text-tech-visible">/ 002 - UX/UI REDESIGN + FRONTEND</span>
+                            <h3>Underc0de</h3>
+                            <a href="https://www.behance.net/gallery/230917767/Underc0de-Rediseno-Web-HtmlCss" class="p-link">Ver Detalles ↗</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="project-card-cyber">
+                        <div class="p-img"><img src="/assets/images/dakar.jpg" alt="Dexter"></div>
+                        <div class="p-info">
+                            <span class="text-tech-visible">/ 003 - UX/UI REDESIGN</span>
+                            <h3>Dakar</h3>
+                            <a href="https://www.behance.net/gallery/214479035/Rediseno-web-Dakar-UX-UI" class="p-link">Ver Detalles ↗</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div id="projects-container" class="row g-4">
-                <!-- Los proyectos destacados se cargarán aquí dinámicamente -->
-            </div>
-            <!-- Ver Más Section -->
-            <div class="row mt-5">
-                <div class="col-12 text-center">
-                    <a href="proyectos.html" class="btn btn-custom btn-lg">
-                        Ver Todos los Proyectos <i class="fas fa-arrow-right ms-2"></i>
-                    </a>
-                </div>
+            <div class="text-center mt-100">
+                <a href="proyectos.html" class="btn-custom-cyber">VER TODOS LOS PROYECTOS</a>
             </div>
         </div>
     </section>
-    
-    <!-- About Section -->
-    <section class="about-section" id="about">
+
+    <!-- SECCIÓN MEJORADA: EXPERIENCIA Y ENFOQUE -->
+    <section class="about-section py-cyber" id="about">
         <div class="container">
             <div class="row">
-                <div class="col-md-8 offset-md-2">
-                    <div class="text-center">
-                        <h2 class="display-4 fw-bold mb-4">• Sobre Mí</h2>
-                        <p class="about-text mb-5">
-                            Tengo experiencia en el diseño de interfaces y experiencia de usuario, así como en la creación de prototipos interactivos. Me encanta trabajar con herramientas como Figma, Adobe XD y Photoshop. 
-                        </p>
-                        <a href="#contact" class="btn btn-custom">Contactar <i class="fas fa-arrow-right ms-2"></i></a>
+                <div class="col-lg-5">
+                    <p class="text-tech-visible mb-3">// ENFOQUE_PROFESIONAL</p>
+                    <h2 class="display-4 fw-bold text-white mb-4">DISEÑO QUE RESUELVE PROBLEMAS</h2>
+                </div>
+                <div class="col-lg-6 offset-lg-1">
+                    <div class="experience-grid">
+                        <div class="exp-stat">
+                            <h3 class="stat-number">+4</h3>
+                            <p class="stat-label">AÑOS</p>
+                        </div>
+                        <div class="exp-stat">
+                            <h3 class="stat-number">10+</h3>
+                            <p class="stat-label">PROYECTOS</p>
+                        </div>
+                        <div class="exp-stat">
+                            <h3 class="stat-number">100%</h3>
+                            <p class="stat-label">REMOTO</p>
+                        </div>
+                    </div>
+                    <p class="about-text-premium mt-5">
+                        Trabajo con startups y agencias que necesitan interfaces funcionales, accesibles y visualmente coherentes. <span class="text-white">Mi enfoque combina research, prototipado rápido y diseño de sistemas escalables.</span>
+                    </p>
+                    <div class="mt-4">
+                        <a href="#contact" class="btn-custom-cyber">Hablemos de tu proyecto</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    
-    <!-- Skills Section -->
-    <section class="skills-section py-5 mt-5 position-relative" id="skills">
-        <div class="skills-bg"></div>
-        <div class="container position-relative">
+
+    <!-- SECCIÓN MEJORADA: SERVICIOS EN LUGAR DE SKILLS -->
+    <section class="services-section py-150" id="services">
+        <div class="container">
             <div class="row mb-5">
                 <div class="col-12">
-                    <h2 class="display-3 fw-bold">• Habilidades</h2>
-                    <p class="lead text-muted">Las herramientas y cualidades que definen mi trabajo</p>
+                    <p class="text-tech-visible mb-2">// CAPACIDADES_CORE</p>
+                    <h2 class="display-4 fw-bold text-white">LO QUE HAGO</h2>
                 </div>
             </div>
-            <div class="row mb-5">
-                <div class="col-12">
-                    <h3 class="display-6 fw-bold mb-4">Técnicas</h3>
-                </div>
+            <div class="row g-4">
+                <!-- Servicio 1 -->
                 <div class="col-md-6">
-                    <div class="skill-item mb-5">
-                        <div class="d-flex justify-content-between align-items-center mb-2">
-                            <span class="fs-4"> UX / UI </span>
-                            <span class="fs-5 text-muted">95%</span>
-                        </div>
-                        <div class="progress" style="height: 2px; background-color: rgba(255,255,255,0.1);">
-                            <div class="progress-bar" role="progressbar" style="width: 95%; background-color: #ffffff;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item mb-5">
-                        <div class="d-flex justify-content-between align-items-center mb-2">
-                            <span class="fs-4"> Figma </span>
-                            <span class="fs-5 text-muted">95%</span>
-                        </div>
-                        <div class="progress" style="height: 2px; background-color: rgba(255,255,255,0.1);">
-                            <div class="progress-bar" role="progressbar" style="width: 95%; background-color: #ffffff;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item mb-5">
-                        <div class="d-flex justify-content-between align-items-center mb-2">
-                            <span class="fs-4"> Adobe Illustrator </span>
-                            <span class="fs-5 text-muted">90%</span>
-                        </div>
-                        <div class="progress" style="height: 2px; background-color: rgba(255,255,255,0.1);">
-                            <div class="progress-bar" role="progressbar" style="width: 90%; background-color: #ffffff;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="service-card-pro">
+                        <div class="service-number">01</div>
+                        <h3 class="service-title">UX/UI DESIGN</h3>
+                        <p class="service-desc">Diseño de interfaces centradas en el usuario. Wireframes, prototipos interactivos y design systems escalables.</p>
+                        <div class="service-tools">
+                            <span class="tool-tag">FIGMA</span>
+                            <span class="tool-tag">ADOBE XD</span>
+                            <span class="tool-tag">PROTOTYPING</span>
                         </div>
                     </div>
                 </div>
+                <!-- Servicio 2 -->
                 <div class="col-md-6">
-                    <div class="skill-item mb-5">
-                        <div class="d-flex justify-content-between align-items-center mb-2">
-                            <span class="fs-4"> Adobe XD </span>
-                            <span class="fs-5 text-muted">80%</span>
-                        </div>
-                        <div class="progress" style="height: 2px; background-color: rgba(255,255,255,0.1);">
-                            <div class="progress-bar" role="progressbar" style="width: 80%; background-color: #ffffff;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item mb-5">
-                        <div class="d-flex justify-content-between align-items-center mb-2">
-                            <span class="fs-4"> Adobe Photoshop </span>
-                            <span class="fs-5 text-muted">85%</span>
-                        </div>
-                        <div class="progress" style="height: 2px; background-color: rgba(255,255,255,0.1);">
-                            <div class="progress-bar" role="progressbar" style="width: 85%; background-color: #ffffff;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="service-card-pro">
+                        <div class="service-number">02</div>
+                        <h3 class="service-title">VISUAL DESIGN</h3>
+                        <p class="service-desc">Identidad visual, branding digital y composición gráfica. Enfoque en estética moderna y coherencia de marca.</p>
+                        <div class="service-tools">
+                            <span class="tool-tag">PHOTOSHOP</span>
+                            <span class="tool-tag">ILLUSTRATOR</span>
+                            <span class="tool-tag">BRANDING</span>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row mt-5 pt-5">
-                <div class="col-12">
-                    <h3 class="display-6 fw-bold mb-5">Blandas</h3>
-                </div>
-                <div class="col-md-3 mb-4">
-                    <div class="soft-skill-item">
-                        <h4 class="fs-2 fw-light mb-3">01</h4>
-                        <h5 class="fs-4 mb-2">Trabajo en Equipo</h5>
-                        <div class="skill-level">
-                            <span class="skill-dot active"></span>
-                            <span class="skill-dot active"></span>
-                            <span class="skill-dot active"></span>
-                            <span class="skill-dot active"></span>
-                            <span class="skill-dot active"></span>
+                <!-- Servicio 3 -->
+                <div class="col-md-6">
+                    <div class="service-card-pro">
+                        <div class="service-number">03</div>
+                        <h3 class="service-title">WEB DESIGN</h3>
+                        <p class="service-desc">Diseño responsive y optimizado para múltiples dispositivos. Landing pages, portfolios y sitios corporativos.</p>
+                        <div class="service-tools">
+                            <span class="tool-tag">HTML/CSS</span>
+                            <span class="tool-tag">RESPONSIVE</span>
+                            <span class="tool-tag">WEBFLOW</span>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 mb-4">
-                    <div class="soft-skill-item">
-                        <h4 class="fs-2 fw-light mb-3">02</h4>
-                        <h5 class="fs-4 mb-2">Creatividad</h5>
-                        <div class="skill-level">
-                            <span class="skill-dot active"></span>
-                            <span class="skill-dot active"></span>
-                            <span class="skill-dot active"></span>
-                            <span class="skill-dot active"></span>
-                            <span class="skill-dot active"></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 mb-4">
-                    <div class="soft-skill-item">
-                        <h4 class="fs-2 fw-light mb-3">03</h4>
-                        <h5 class="fs-4 mb-2">Comunicación</h5>
-                        <div class="skill-level">
-                            <span class="skill-dot active"></span>
-                            <span class="skill-dot active"></span>
-                            <span class="skill-dot active"></span>
-                            <span class="skill-dot active"></span>
-                            <span class="skill-dot"></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 mb-4">
-                    <div class="soft-skill-item">
-                        <h4 class="fs-2 fw-light mb-3">04</h4>
-                        <h5 class="fs-4 mb-2">Organización</h5>
-                        <div class="skill-level">
-                            <span class="skill-dot active"></span>
-                            <span class="skill-dot active"></span>
-                            <span class="skill-dot active"></span>
-                            <span class="skill-dot active"></span>
-                            <span class="skill-dot active"></span>
+                <!-- Servicio 4 -->
+                <div class="col-md-6">
+                    <div class="service-card-pro">
+                        <div class="service-number">04</div>
+                        <h3 class="service-title">RESEARCH & TESTING</h3>
+                        <p class="service-desc">Análisis de usuarios, pruebas de usabilidad y optimización basada en datos reales de comportamiento.</p>
+                        <div class="service-tools">
+                            <span class="tool-tag">USER TESTING</span>
+                            <span class="tool-tag">ANALYTICS</span>
+                            <span class="tool-tag">A/B TESTING</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>  
-    
-    <!-- Contact Section -->
-    <section class="contact-section" id="contact">
-      <div class="container">
-        <div class="get-in-touch">
-          <h2>Contáctame <span class="arrow-icon">&#8599;</span></h2>
-          <form action="https://formspree.io/f/yourFormID" method="POST" class="contact-form">
-            <input type="text" name="name" placeholder="Tu nombre" required>
-            <input type="email" name="email" placeholder="Tu correo" required>
-            <textarea name="message" placeholder="Tu mensaje" rows="5" required></textarea>
-            <button type="submit" class="btn-custom">Enviar</button>
-          </form>
-        </div>
-        <div class="social-links">
-          <a href="https://www.linkedin.com/in/valentino-lorenti-ux" class="social-link" target="_blank">LINKEDIN</a>
-          <a href="https://www.instagram.com/lv_designux" class="social-link" target="_blank">INSTAGRAM</a>
-          <a href="https://www.behance.net/LV_DesignUX" class="social-link" target="_blank">BEHANCE</a>
-        </div>
-      </div>
     </section>
-    
-    <!-- Back to Top -->
-    <div class="back-to-top-container">
-        <a href="#home" class="back-to-top">
-            BACK TO TOP
-        </a>
-    </div>
-    
-    <!-- Footer -->
-    <footer class="footer py-4">
-        <div class="container-fluid px-4">
-            <div class="row">
-                <div class="col-12">
-                    <p class="mb-0">© <span id="currentYear">2025</span> LV | Valentino Lorenti. TODOS LOS DERECHOS RESERVADOS.</p>
-                </div>
+
+    <section class="contact-wrap" id="contact">
+        <div class="container">
+            <p class="text-tech-visible mb-3">// INPUT</p>
+            <h2 class="glitch display-2 fw-bold text-white" data-text="CONTACTAME">CONTACTAME</h2>
+            <div class="social-grid">
+                <a href="https://www.instagram.com/lv_designux" target="_blank" class="social-item">
+                    <i class="fab fa-instagram sc-icon"></i>
+                    <span class="sc-name">INSTAGRAM</span>
+                    <p class="sc-cta mb-0">SEGUIR ↗</p>
+                </a>
+                <a href="https://www.linkedin.com/in/valentino-lorenti-ux" target="_blank" class="social-item">
+                    <i class="fab fa-linkedin sc-icon"></i>
+                    <span class="sc-name">LINKEDIN</span>
+                    <p class="sc-cta mb-0">CONECTAR ↗</p>
+                </a>
+                <a href="https://www.behance.net/LV_DesignUX" target="_blank" class="social-item">
+                    <i class="fab fa-behance sc-icon"></i>
+                    <span class="sc-name">BEHANCE</span>
+                    <p class="sc-cta mb-0">PORTFOLIO ↗</p>
+                </a>
             </div>
+        </div>
+    </section>
+
+    <footer class="py-5 border-top-thin">
+        <div class="container text-center">
+            <p class="text-tech-visible mb-0">© 2026 LV | VALENTINO LORENTI</p>
         </div>
     </footer>
-    
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Custom JS -->
-    <script src="js/scripts.js"></script>
+
+    <script>
+        // Reloj
+        setInterval(() => {
+            const now = new Date();
+            document.getElementById('clock').innerHTML = now.toLocaleTimeString('es-AR');
+        }, 1000);
+
+        // Menú Toggle
+        const menuBtn = document.getElementById('menuBtn');
+        const closeBtn = document.getElementById('closeBtn');
+        const overlay = document.getElementById('menuOverlay');
+
+        menuBtn.addEventListener('click', () => overlay.classList.add('active'));
+        closeBtn.addEventListener('click', () => overlay.classList.remove('active'));
+        
+        // Cerrar menú al clickear un link
+        document.querySelectorAll('.menu-link').forEach(link => {
+            link.addEventListener('click', () => overlay.classList.remove('active'));
+        });
+    </script>
 </body>
 </html>

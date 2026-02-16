@@ -3,128 +3,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyectos - Tu Portfolio</title>
-    <!-- Bootstrap CSS -->
+    <title>Proyectos | LV Design</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <!-- Font Awesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <!-- Tus estilos -->
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/proyectos.css">
 </head>
 <body>
-    <!-- Cursor -->
+
+    <div class="grid-overlay"></div>
+    <div class="scan-line"></div>
     <div class="cursor"></div>
-    
-    <!-- Social Sidebar -->
-    <div class="social-sidebar d-none d-md-block">
-        <a href="https://www.instagram.com/lv_designux"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.behance.net/LV_DesignUX"><i class="fab fa-behance"></i></a>
-        <a href="https://www.linkedin.com/in/valentino-lorenti-ux"><i class="fab fa-linkedin"></i></a>
+
+    <!-- Menu Overlay -->
+    <div class="cyber-menu" id="menuOverlay">
+        <button class="close-menu" id="closeBtn">CLOSE // ✕</button>
+        <nav class="menu-content">
+            <a href="index.html" class="menu-link" data-text="INICIO">INICIO</a>
+            <a href="proyectos.html" class="menu-link" data-text="PROYECTOS">PROYECTOS</a>
+            <a href="index.html#about" class="menu-link" data-text="SOBRE MÍ">SOBRE MÍ</a>
+            <a href="index.html#contact" class="menu-link" data-text="CONTACTO">CONTACTO</a>
+        </nav>
     </div>
-    
+
     <!-- Header -->
-    <header class="container-fluid py-4">
-        <div class="row align-items-center">
-            <div class="col-6">
-                <a href="index.html" class="text-decoration-none">
-                    <div class="logo text-white"> <img src="img/logo.png" width="10%"> </div>
-                </a>
-            </div>
-            <div class="col-6 text-end">
-                <div class="d-flex justify-content-end align-items-center">
-                    <div class="studio-info text-end me-4 d-none d-md-block">
-                        <p class="mb-0">LV | Valentino Lorenti</p>
+    <header>
+        <div class="container-fluid px-4 px-md-5">
+            <div class="row align-items-center">
+                <div class="col-6 col-md-4">
+                    <a href="index.html" class="logo">
+                        <img src="img/logo.png" width="40" alt="LV">
+                    </a>
+                </div>
+                <div class="col-md-4 d-none d-md-flex justify-content-center">
+                    <div class="studio-info">
+                        <p class="mb-0">LV | VALENTINO LORENTI</p>
                     </div>
-                    <div class="studio-info text-end me-4 d-none d-md-block">
-                        <p class="mb-0">+ Hora Local</p>
-                        <p class="mb-0 current-time">00:00:00 (GMT)</p>
+                </div>
+                <div class="col-6 col-md-4 text-end">
+                    <div class="header-data justify-content-end">
+                        <div class="time-box d-none d-lg-block me-4">
+                            <p class="mb-0 text-tech-visible">+ TIEMPO LOCAL</p>
+                            <p class="mb-0 text-white" id="clock">00:00:00 (GMT-3)</p>
+                        </div>
+                        <button class="menu-btn" id="menuBtn">MENU</button>
                     </div>
-                    <button class="menu-btn" id="menuBtn">MENU</button>
                 </div>
             </div>
         </div>
     </header>
-    
-    <!-- Menu Overlay -->
-    <div class="menu-overlay" id="menuOverlay">
-        <button class="close-menu" id="closeMenu">
-            <i class="fas fa-times"></i>
-        </button>
-        <ul class="menu-links">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="proyectos.html">Proyectos</a></li>
-            <li><a href="index.html#about">Sobre Mí</a></li>
-            <li><a href="index.html#contact">Contacto</a></li>
-        </ul>
-    </div>
-    
-    <!-- Projects Header -->
-    <section class="py-5 mt-5">
-        <div class="container">
+
+    <!-- Hero Projects -->
+    <section class="projects-hero">
+        <div class="container px-4 px-md-5">
             <div class="row">
-                <div class="col-12">
-                    <h1 class="display-3 fw-bold mb-4">Proyectos</h1>
-                    <p class="lead mb-5">Una selección de nuestros trabajos más recientes y destacados.</p>
+                <div class="col-lg-8">
+                    <p class="text-tech-visible mb-3">// PORTFOLIO_COMPLETO</p>
+                    <h1 class="display-mega-projects">PROYECTOS</h1>
+                    <p class="lead-projects">
+                        Colección de trabajos en UX/UI Design, branding digital y diseño web. 
+                        <span class="text-white">Cada proyecto resuelve problemas reales de usuarios.</span>
+                    </p>
                 </div>
             </div>
-            
-            <!-- Project Filters -->
-            <div class="row mb-5">
-                <div class="col-12">
-                    <div class="project-filters">
-                        <button class="filter-btn" data-filter="Todos">Todos</button>
-                        <button class="filter-btn" data-filter="UX Research">Ux Research</button>
-                        <button class="filter-btn" data-filter="Diseño Web">Diseño Web</button>
-                        <button class="filter-btn" data-filter="UI/UX">UI/UX</button>
-                        <button class="filter-btn" data-filter="Sitio Web">Sitio Web</button>
+        </div>
+    </section>
+
+    <!-- Filters -->
+    <section class="filters-section">
+        <div class="container px-4 px-md-5">
+            <div class="filters-grid">
+                <button class="filter-btn-cyber active" data-filter="all">
+                    <span class="filter-label">TODOS</span>
+                    <span class="filter-count" id="count-all">12</span>
+                </button>
+                <button class="filter-btn-cyber" data-filter="ux-research">
+                    <span class="filter-label">UX RESEARCH</span>
+                    <span class="filter-count" id="count-research">3</span>
+                </button>
+                <button class="filter-btn-cyber" data-filter="ui-design">
+                    <span class="filter-label">UI DESIGN</span>
+                    <span class="filter-count" id="count-ui">5</span>
+                </button>
+                <button class="filter-btn-cyber" data-filter="web-design">
+                    <span class="filter-label">WEB DESIGN</span>
+                    <span class="filter-count" id="count-web">4</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="projects-grid-section">
+        <div class="container px-4 px-md-5">
+            <div class="row g-4" id="projectsContainer">
+                <!-- Los proyectos se cargan dinámicamente desde proyectos.json -->
+                <div class="col-12 text-center py-5">
+                    <div class="spinner-border text-white" role="status">
+                        <span class="visually-hidden">Cargando proyectos...</span>
+                    </div>
+                    <p class="text-tech-visible mt-3">// LOADING_PROJECTS</p>
+                </div>
+            </div>
+
+            <!-- Empty State (cuando filtro no tiene resultados) -->
+            <div class="empty-state" id="emptyState" style="display: none;">
+                <div class="text-center py-5">
+                    <p class="text-tech-visible mb-3">// NO_RESULTS</p>
+                    <h3 class="text-white mb-3">Sin proyectos en esta categoría</h3>
+                    <p class="text-muted-ux">Prueba con otro filtro o explora todos los proyectos</p>
+                    <button class="btn-custom-cyber mt-4" data-filter="all">Ver todos</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section-projects">
+        <div class="container px-4 px-md-5">
+            <div class="cta-box-cyber">
+                <div class="row align-items-center">
+                    <div class="col-lg-8">
+                        <p class="text-tech-visible mb-3">// SIGUIENTE_PASO</p>
+                        <h2 class="display-5 fw-bold text-white mb-3">¿Tienes un proyecto en mente?</h2>
+                        <p class="text-muted-ux mb-0">Hablemos de cómo puedo ayudarte a resolver problemas de diseño y crear experiencias digitales efectivas.</p>
+                    </div>
+                    <div class="col-lg-4 text-lg-end mt-4 mt-lg-0">
+                        <a href="index.html#contact" class="btn-custom-cyber-large">Iniciar Proyecto</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    
-    <!-- Projects Grid -->
-    <section class="py-5">
-        <div class="container">
-            <div class="row g-4 projects-grid" id="projects-container">
-                <!-- Los proyectos se cargarán aquí dinámicamente -->
-            </div>
-        </div>
-    </section>
-    
-    <!-- Back to Home -->
-    <section class="py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <a href="index.html" class="btn btn-custom">
-                        <i class="fas fa-arrow-left me-2"></i> Volver al Inicio
+
+    <!-- Footer -->
+    <footer class="py-5 border-top-thin">
+        <div class="container px-4 px-md-5">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="text-tech-visible mb-0">© 2026 LV | VALENTINO LORENTI</p>
+                </div>
+                <div class="col-md-6 text-md-end mt-3 mt-md-0">
+                    <a href="index.html" class="back-link">
+                        <i class="fas fa-arrow-left me-2"></i> VOLVER AL INICIO
                     </a>
                 </div>
             </div>
         </div>
-    </section>
-    
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <p>© <span id="currentYear">2025</span> LV | Valentino Lorenti. Todos los derechos reservados.</p>
-                </div>
-                <div class="col-md-6 text-md-end">
-                    <a href="#" class="text-white text-decoration-none">Volver arriba</a>
-                </div>
-            </div>
-        </div>
     </footer>
-    
-    <!-- Bootstrap JS -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Custom JS -->
-    <script src="js/scripts.js"></script>
+    <script src="js/proyectos.js"></script>
 </body>
 </html>

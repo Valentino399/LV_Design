@@ -1,308 +1,362 @@
-:root {
-    --dark-bg: #0a0a0a;
-    --text-color: #ffffff;
-    --accent-color: #ffffff;
-    --border-color: rgba(255, 255, 255, 0.1);
-}
+/* =============================================================================
+   LV_PROJECTS_ENGINE | PROFESSIONAL_BUILD_v9.2026
+   DEVELOPER: Valentino Lorenti (UX/UI Designer)
+   STYLE: Professional Cyberpunk Minimalist - Projects Page
+   ============================================================================= */
 
-body {
-    font-family: 'Inter', sans-serif;
-    background-color: var(--dark-bg);
-    color: var(--text-color);
-    overflow-x: hidden;
-}
-
-.logo {
-    font-size: 5rem;
-    font-weight: 700;
-    letter-spacing: -2px;
-    line-height: 0.9;
-}
-
-.menu-btn {
-    background: transparent;
-    border: 1px solid var(--border-color);
-    color: var(--text-color);
-    padding: 0.5rem 1rem;
-    transition: all 0.3s ease;
-}
-
-.menu-btn:hover {
-    background: rgba(255, 255, 255, 0.1);
-}
-
-.social-sidebar {
-    position: fixed;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 100;
-    padding: 1rem;
-}
-
-.social-sidebar a {
-    display: block;
-    color: var(--text-color);
-    margin: 1rem 0;
-    font-size: 1.2rem;
-    transition: all 0.3s ease;
-}
-
-.social-sidebar a:hover {
-    color: var(--accent-color);
-    transform: translateX(5px);
-}
-
-.hero-section {
-    min-height: 100vh;
+/* --- [1. PROJECTS HERO] --- */
+.projects-hero {
+    min-height: 60vh;
     display: flex;
     align-items: center;
+    padding-top: 150px;
+    padding-bottom: 80px;
     position: relative;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(10,10,10,1) 100%);
 }
 
-.hero-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('https://source.unsplash.com/random/1920x1080/?abstract,dark') no-repeat center center;
-    background-size: cover;
-    opacity: 0.3;
-    z-index: -1;
-}
-
-.project-card {
-    background: rgba(20, 20, 20, 0.7);
-    border: 1px solid var(--border-color);
-    border-radius: 0;
-    overflow: hidden;
-    transition: all 0.3s ease;
-    height: 100%;
-}
-
-.project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-}
-
-.project-img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-}
-
-.project-info {
-    padding: 1.5rem;
-}
-
-.project-number {
-    font-size: 0.8rem;
-    color: rgba(255, 255, 255, 0.5);
-}
-
-.about-section {
-    padding: 5rem 0;
-    position: relative;
-}
-
-.about-text {
-    font-size: 1.2rem;
-    line-height: 1.6;
-}
-
-.btn-custom {
-    background: transparent;
-    border: 1px solid var(--border-color);
-    color: var(--text-color);
-    padding: 0.75rem 2rem;
-    transition: all 0.3s ease;
-    border-radius: 0;
-}
-
-.btn-custom:hover {
-    background: rgba(255, 255, 255, 0.1);
-    color: var(--text-color);
-}
-
-.footer {
-    padding: 2rem 0;
-    border-top: 1px solid var(--border-color);
-}
-
-.cursor {
-    position: fixed;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.5);
-    pointer-events: none;
-    transform: translate(-50%, -50%);
-    z-index: 9999;
-    mix-blend-mode: difference;
-    transition: transform 0.1s ease;
-}
-
-.studio-info {
-    font-size: 0.8rem;
-    color: rgba(255, 255, 255, 0.7);
-}
-
-.menu-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: var(--dark-bg);
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.5s ease;
-}
-
-.menu-overlay.active {
-    opacity: 1;
-    visibility: visible;
-}
-
-.menu-links {
-    list-style: none;
-    padding: 0;
-}
-
-.menu-links li {
-    margin: 2rem 0;
-    font-size: 2.5rem;
-    font-weight: 700;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: all 0.3s ease;
-}
-
-.menu-overlay.active .menu-links li {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.menu-links a {
-    color: var(--text-color);
-    text-decoration: none;
-    transition: all 0.3s ease;
-    position: relative;
-}
-
-.menu-links a::after {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: var(--text-color);
-    transition: all 0.3s ease;
-}
-
-.menu-links a:hover::after {
-    width: 100%;
-}
-
-.close-menu {
-    position: absolute;
-    top: 2rem;
-    right: 2rem;
-    background: transparent;
-    border: none;
-    color: var(--text-color);
-    font-size: 1.5rem;
-    cursor: pointer;
-}
-
-.project-filters {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
+.display-mega-projects {
+    font-size: clamp(4rem, 12vw, 9rem);
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 0.85;
     margin-bottom: 2rem;
+    letter-spacing: -4px;
 }
 
-.filter-btn {
-    background: transparent;
-    border: 1px solid var(--border-color);
-    color: var(--text-color);
-    padding: 0.5rem 1.5rem;
-    transition: all 0.3s ease;
+.lead-projects {
+    color: var(--color-text-muted);
+    max-width: 700px;
+    font-size: 1.15rem;
+    line-height: 1.7;
+    border-left: 2px solid var(--color-accent);
+    padding-left: 25px;
+}
+
+/* --- [2. FILTERS SECTION] --- */
+.filters-section {
+    padding: 60px 0;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.filters-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.filter-btn-cyber {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    padding: 20px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.4s var(--bezier-premium);
     cursor: pointer;
+    position: relative;
+    overflow: hidden;
 }
 
-.filter-btn:hover {
-    background: rgba(255, 255, 255, 0.1);
+.filter-btn-cyber::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: var(--color-accent);
+    transition: left 0.4s var(--bezier-premium);
 }
 
-.filter-btn.active {
-    background: rgba(255, 255, 255, 0.2);
-    border-color: var(--text-color);
+.filter-btn-cyber:hover::before,
+.filter-btn-cyber.active::before {
+    left: 0;
 }
 
-.project-link {
-    color: var(--text-color);
-    text-decoration: none;
-    display: inline-block;
-    margin-top: 1rem;
-    font-size: 0.9rem;
-    transition: all 0.3s ease;
+.filter-btn-cyber:hover {
+    border-color: var(--color-border-bright);
+    transform: translateY(-3px);
 }
 
-.project-link:hover {
-    color: var(--accent-color);
-    transform: translateX(5px);
+.filter-btn-cyber.active {
+    border-color: var(--color-accent);
+    background: rgba(255, 255, 255, 0.03);
 }
 
-@media (max-width: 768px) {
-    .logo {
-        font-size: 3rem;
-    }
-    
-    .social-sidebar {
-        position: static;
-        transform: none;
-        display: flex;
-        justify-content: center;
-        padding: 1rem 0;
-    }
-    
-    .social-sidebar a {
-        margin: 0 1rem;
-    }
-    
-    .menu-links li {
-        font-size: 1.8rem;
-    }
-    
-    .project-filters {
-        justify-content: center;
-    }
+.filter-label {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--color-text-muted);
+    transition: color 0.4s var(--bezier-premium);
 }
 
+.filter-btn-cyber.active .filter-label,
+.filter-btn-cyber:hover .filter-label {
+    color: var(--color-accent);
+}
 
-/* Estado inicial de los proyectos */
+.filter-count {
+    font-family: var(--font-mono);
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: var(--color-text-dim);
+    transition: color 0.4s var(--bezier-premium);
+}
+
+.filter-btn-cyber.active .filter-count,
+.filter-btn-cyber:hover .filter-count {
+    color: var(--color-accent);
+}
+
+/* --- [3. PROJECTS GRID SECTION] --- */
+.projects-grid-section {
+    padding: 100px 0;
+}
+
+/* Estado inicial de los proyectos (para animación) */
 .project-item {
     opacity: 0;
     transform: translateY(30px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    transition: opacity 0.6s var(--bezier-premium), transform 0.6s var(--bezier-premium);
 }
 
-/* Estado cuando el proyecto es visible */
 .project-item.visible {
     opacity: 1;
     transform: translateY(0);
 }
 
-/* Oculta el cursor custom en pantallas menores a 992px */
-@media (max-width: 991px) {
-  .cursor {
-    display: none !important;
-  }
+/* Descripción del proyecto */
+.project-desc {
+    font-size: 0.9rem;
+    color: var(--color-text-dim);
+    line-height: 1.6;
+    margin: 15px 0;
+    min-height: 48px; /* Para mantener altura consistente */
 }
+
+.project-card-cyber:hover .project-desc {
+    color: var(--color-text-muted);
+}
+
+/* --- [4. EMPTY STATE] --- */
+.empty-state {
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px dashed var(--color-border);
+    margin-top: 50px;
+}
+
+/* --- [5. CTA SECTION] --- */
+.cta-section-projects {
+    padding: 100px 0;
+    border-top: 1px solid var(--color-border);
+}
+
+.cta-box-cyber {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    padding: 60px 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-box-cyber::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: var(--color-accent);
+}
+
+.btn-custom-cyber-large {
+    display: inline-block;
+    padding: 20px 50px;
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff !important;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 0.8rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: all 0.4s var(--bezier-premium);
+    text-decoration: none !important;
+}
+
+.btn-custom-cyber-large::before {
+    content: "";
+    position: absolute;
+    top: 0; 
+    left: -100%;
+    width: 100%; 
+    height: 100%;
+    background: #fff;
+    z-index: -1;
+    transition: transform 0.5s var(--bezier-premium);
+}
+
+.btn-custom-cyber-large:hover::before {
+    transform: translateX(100%);
+}
+
+.btn-custom-cyber-large:hover {
+    color: #000 !important;
+}
+
+/* --- [6. FOOTER LINKS] --- */
+.back-link {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--color-text-dim) !important;
+    text-decoration: none !important;
+    letter-spacing: 2px;
+    transition: color 0.3s ease;
+}
+
+.back-link:hover {
+    color: var(--color-accent) !important;
+}
+
+/* --- [7. GRID OVERLAY & SCAN LINE (Efectos cyberpunk)] --- */
+.grid-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+    background-size: 50px 50px;
+    pointer-events: none;
+    z-index: 1;
+    opacity: 0.3;
+}
+
+
+/* --- [9. RESPONSIVE] --- */
+@media (max-width: 992px) {
+    .projects-hero {
+        min-height: 50vh;
+        padding-top: 120px;
+    }
+    
+    .display-mega-projects {
+        font-size: 5rem;
+    }
+    
+    .filters-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    
+    .filter-btn-cyber {
+        padding: 15px 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .projects-hero {
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+    
+    .display-mega-projects {
+        font-size: 3.5rem;
+        letter-spacing: -2px;
+    }
+    
+    .lead-projects {
+        font-size: 1rem;
+        border-left: none;
+        padding-left: 0;
+    }
+    
+    .filters-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .projects-grid-section {
+        padding: 60px 0;
+    }
+    
+    .cta-box-cyber {
+        padding: 40px 30px;
+        text-align: center;
+    }
+    
+    .cta-section-projects {
+        padding: 60px 0;
+    }
+    
+    .btn-custom-cyber-large {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .display-mega-projects {
+        font-size: 2.5rem;
+    }
+    
+    .filter-label {
+        font-size: 0.7rem;
+    }
+    
+    .filter-count {
+        font-size: 1rem;
+    }
+    
+    .project-desc {
+        min-height: auto;
+        font-size: 0.85rem;
+    }
+}
+
+/* --- [10. MEJORAS DE ACCESIBILIDAD] --- */
+.filter-btn-cyber:focus,
+.btn-custom-cyber-large:focus {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 4px;
+}
+
+/* --- [11. LOADER DE PROYECTOS] --- */
+.spinner-border {
+    width: 3rem;
+    height: 3rem;
+    border-width: 3px;
+    opacity: 0.5;
+}
+
+/* --- [12. ENLACES DE PROYECTO] --- */
+.project-link-wrapper {
+    text-decoration: none !important;
+    color: inherit;
+    display: block;
+}
+
+.project-link-wrapper:hover {
+    text-decoration: none !important;
+}
+
+/* Reducir movimiento para usuarios que lo prefieran */
+@media (prefers-reduced-motion: reduce) {
+    .project-item,
+    .filter-btn-cyber,
+    .scan-line {
+        animation: none;
+        transition: none;
+    }
+}
+
+/* LV_PROJECTS_PROFESSIONAL_2026 */
