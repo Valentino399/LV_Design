@@ -1,0 +1,12 @@
+# robots.txt para LV Design Portfolio
+# https://valentinolorenti.netlify.app
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://valentinolorenti.netlify.app/sitemap.xml
+
+# Páginas que NO queremos indexar (si las hay)
+# Disallow: /admin/
+# Disallow: /test/
