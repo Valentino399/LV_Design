@@ -824,3 +824,163 @@ a, a:hover {
 }
 
 /* LV_SYSTEM_PROFESSIONAL_2026 */
+
+/* =============================================================================
+   FIX RESPONSIVE HERO - VERSIÓN CORREGIDA
+   Soluciona texto cortado Y mantiene el espaciado correcto
+   ============================================================================= */
+
+/* --- FIX PRINCIPAL PARA EL TÍTULO --- */
+/* =============================================================================
+   FIX DEFINITIVO RESPONSIVE HERO - Galaxy S8
+   Tamaño de fuente reducido para evitar cortes
+   ============================================================================= */
+
+/* --- TÍTULO HERO BASE --- */
+.hero-section h1,
+.display-mega {
+    font-size: clamp(3rem, 10vw, 7rem);
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 0.9;
+    margin-bottom: 2rem;
+    
+    /* Sombra sutil cyberpunk */
+    /* Sombra sutil con glow blanco */
+    text-shadow: 
+        0 0 20px rgba(43, 43, 43, 0.3),
+        0 0 40px rgba(43, 43, 43, 0.15),
+        0 4px 8px rgba(0, 0, 0, 0.8);
+
+    /* Prevenir overflow */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+/* --- TABLETS --- */
+@media (max-width: 768px) {
+    .hero-section h1,
+    .display-mega {
+        font-size: clamp(2.5rem, 9vw, 5rem) !important;
+        line-height: 1;
+    }
+}
+
+/* --- MÓVILES GRANDES (iPhone 12, Pixel) --- */
+@media (max-width: 576px) {
+    .hero-section h1,
+    .display-mega {
+        font-size: 2.8rem !important;
+        line-height: 1;
+        letter-spacing: -2px;
+    }
+    
+    .hero-section {
+        min-height: 90vh;
+        padding-top: 100px;
+        padding-bottom: 40px;
+    }
+}
+
+/* --- GALAXY S8 Y SIMILARES (360px - 414px) --- */
+@media (max-width: 414px) {
+    .hero-section h1,
+    .display-mega {
+        font-size: 2rem !important; /* Más pequeño */
+        line-height: 1.05;
+        letter-spacing: -1px;
+        margin-bottom: 1.5rem;
+    }
+    
+    /* Mantener saltos de línea */
+    .hero-section h1 br,
+    .display-mega br {
+        display: block !important;
+    }
+    
+    /* Reducir padding lateral */
+    .hero-section .container {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+    
+    .hero-section .col-lg-10 {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    
+    /* Ajustar etiqueta técnica */
+    .hero-section .text-tech-visible {
+        font-size: 0.6rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    /* Ajustar descripción */
+    .hero-section .lead {
+        font-size: 0.9rem;
+        line-height: 1.5;
+        padding-left: 12px;
+        border-left-width: 2px;
+    }
+    
+    /* Botón full width */
+    .hero-section .btn-custom-cyber {
+        padding: 12px 25px;
+        font-size: 0.65rem;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        letter-spacing: 2px;
+    }
+}
+
+/* --- PANTALLAS MUY PEQUEÑAS (< 360px) --- */
+@media (max-width: 359px) {
+    .hero-section h1,
+    .display-mega {
+        font-size: 1.75rem !important;
+        letter-spacing: -0.5px;
+        line-height: 1.1;
+    }
+    
+    .hero-section .container {
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+    }
+}
+
+/* --- IPHONE SE, 5/5S (320px) --- */
+@media (max-width: 320px) {
+    .hero-section h1,
+    .display-mega {
+        font-size: 1.6rem !important;
+        line-height: 1.15;
+    }
+    
+    .hero-section .lead {
+        font-size: 0.85rem;
+        padding-left: 10px;
+    }
+    
+    .hero-section .btn-custom-cyber {
+        padding: 10px 20px;
+        font-size: 0.6rem;
+    }
+}
+
+/* --- FIX VIDEO BACKGROUND --- */
+@media (max-width: 576px) {
+    .hero-bg video {
+        min-width: 100%;
+        min-height: 100%;
+        object-fit: cover;
+    }
+}
+
+/* --- AJUSTE DE OFFSET EN MÓVIL --- */
+@media (max-width: 576px) {
+    .hero-section .col-lg-10.offset-lg-1 {
+        margin-left: 0;
+        max-width: 100%;
+    }
+}
