@@ -1,7 +1,17 @@
 {
   "Projects": [
-    {
+      {
       "id": 0,
+      "title": "Brutalismo Database",
+      "description": "Proyecto arquitectónico surgido en la posguerra que se caracteriza por el uso expuesto del hormigón crudo",
+      "image": "/assets/images/brutalismo.jpg",
+      "url": "https://brutalismo.netlify.app/",
+      "category": "web-design",
+      "categoryLabel": "SITIO WEB",
+      "tags": ["UX/UI", "RESPONSIVE", "WEB DESIGN"]
+    },
+    {
+      "id": 1,
       "title": "Futvo",
       "description": "Plataforma web para fans del fútbol centrada en interacción social y navegación clara.",
       "image": "/assets/images/futvo.jpg",
@@ -11,7 +21,7 @@
       "tags": ["UX/UI", "RESPONSIVE", "WEB DESIGN"]
     },
     {
-      "id": 1,
+      "id": 2,
       "title": "Underc0de",
       "description": "Rediseño UX/UI de Underc0de, comunidad global para compartir conocimiento informático.",
       "image": "/assets/images/underc0de.jpg",
@@ -21,7 +31,7 @@
       "tags": ["UX/UI", "REDESIGN", "WEB DESIGN"]
     },
     {
-      "id": 2,
+      "id": 3,
       "title": "Diartmond",
       "description": "Marketplace NFT Sitio inspirado en colecciones digitales para explorar, comprar y vender NFTs.",
       "image": "/assets/images/diartmond.jpg",
@@ -31,7 +41,7 @@
       "tags": ["UX/UI", "MARKETPLACE", "WEB3"]
     },
     {
-      "id": 3,
+      "id": 4,
       "title": "Gran Turismo",
       "description": "Rediseño web de Gran Turismo con interfaz minimalista y experiencia elegante optimizada.",
       "image": "/assets/images/granturismo.jpg",
@@ -41,7 +51,7 @@
       "tags": ["UX/UI", "REDESIGN", "GAMING"]
     },
     {
-      "id": 4,
+      "id": 5,
       "title": "Dakar",
       "description": "Rediseño web de Dakar con interfaz minimalista y experiencia de usuario optimizada.",
       "image": "/assets/images/dakar.jpg",
@@ -51,7 +61,7 @@
       "tags": ["UX/UI", "REDESIGN", "SPORTS"]
     },
     {
-      "id": 5,
+      "id": 6,
       "title": "Instagram",
       "description": "Research UX identificando problemas de uso y oportunidades de mejora en la red.",
       "image": "/assets/images/instagram.jpg",
@@ -61,7 +71,7 @@
       "tags": ["UX RESEARCH", "SOCIAL MEDIA", "INSIGHTS"]
     },
     {
-      "id": 6,
+      "id": 7,
       "title": "Dexter",
       "description": "Rediseño UX/UI para marca deportiva mejorando jerarquía y experiencia de compra.",
       "image": "/assets/images/dexter.jpg",
@@ -71,7 +81,7 @@
       "tags": ["UX/UI", "E-COMMERCE", "REDESIGN"]
     },
     {
-      "id": 7,
+      "id": 8,
       "title": "Sakiro",
       "description": "E-commerce de moda con flujo de compra optimizado y navegación simplificada.",
       "image": "/assets/images/sakiro.jpg",
@@ -81,7 +91,7 @@
       "tags": ["UX/UI", "E-COMMERCE", "FASHION"]
     },
     {
-      "id": 8,
+      "id": 9,
       "title": "PlumeGuard",
       "description": "Aplicación enfocada en conservación de aves con sistema visual claro y accesible.",
       "image": "/assets/images/plumeguard.jpg",
@@ -91,7 +101,7 @@
       "tags": ["APP DESIGN", "UX/UI", "DESIGN SYSTEM"]
     },
     {
-      "id": 9,
+      "id": 10,
       "title": "All Music",
       "description": "Aplicación de distribución musical para publicar contenido en múltiples plataformas.",
       "image": "/assets/images/allmusic.jpg",
